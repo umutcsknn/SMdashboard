@@ -1,0 +1,368 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/1.background.png");
+  background-size: cover; /* Adjust this property as needed */
+  background-position: center; /* Adjust this property as needed */
+}
+
+.sidebar-container {
+  display: flex; /* Display the elements in a row */
+  padding: 100px 100px 100px 100px;
+  
+  
+}
+
+.leftBar {
+  width: 100px;
+  height: 1000px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 0px solid #000000;
+  background-color: white;
+  padding: 15px;
+  font-size: 12pt;
+  color: #888888;
+  text-align: center;
+}
+
+.midBar{
+  width: 800px;
+  height: 1000px;
+  background-color: #dddddd;
+  padding: 15px;
+  font-size: 12pt;
+  color: #808000;
+  text-align: center;
+  
+}
+
+.rightBar{
+width: 300px;
+height: 1000px;
+background-color: white;
+padding: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+font-size: 12pt;
+color: #888888;
+text-align: center;
+display: flex;
+
+}
+
+.leftBar .icons{
+  width: 100px;
+  height: 800px;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.leftBar .icons a{
+  width: 80px;
+  height: 80px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  
+}
+.leftBar .icons h3 i{
+  font-size: 35px;
+}
+.leftBar .touch i:hover{
+  background-color: aquamarine;
+  
+} 
+.leftBar .exit{
+  margin-top: 130px;
+ 
+}
+.socialBox ul {
+  
+  display: flex; /* Create a flex container */
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 130px 0;
+}
+
+.socialBox li:hover{
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.3s;
+}
+
+.socialBox li{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150px;
+  height: 200px; /* Adjust the height to fit the content */
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0px 0px 1px #000000;
+  border: 3px solid #FFFFFF;
+  background-color: #dddddd;
+  font-size: 13pt;
+  color: #888888;
+  text-align: center;
+  margin-right: 100px;
+  
+}
+
+.twitterBox img {
+  width: 36px; /* Adjust as needed */
+  height: 36px; /* Maintain aspect ratio */
+  
+}
+.socialBox h2{
+  
+  font-family:Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.socialBox h6{
+  
+  font-family:Arial, Helvetica, sans-serif;
+  color: bla;
+}
+.socialBox i{
+  padding-left: 80px;
+}
+.instaBox img {
+  width: 36px; /* Adjust as needed */
+  height: 36px; /* Maintain aspect ratio */
+}
+.youBox img {
+  width: 36px; /* Adjust as needed */
+  height: 36px; /* Maintain aspect ratio */
+}
+.faceBox img {
+  width: 36px; /* Adjust as needed */
+  height: 36px; /* Maintain aspect ratio */
+}
+.midBar .lists{
+  position: absolute;
+  top: 220px;
+  left: 250px;
+}
+.chartMainWrapper{
+  width: 97%;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.chartMainWrapper .headerWrapper{
+  display: flex;
+  background-color: white;
+
+}
+.chartMainWrapper .headerWrapper .title{
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  padding-right: 550px;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.chartMainWrapper .infoWrapper{
+  display: flex;
+  gap: 8px;
+}
+
+.chartMainWrapper .infoWrapper .gainbox,
+.chartMainWrapper .infoWrapper .lostbox{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chartMainWrapper .infoWrapper .gainbox .text,
+.chartMainWrapper .infoWrapper .lostbox .text{
+  display: flex;
+  font-size: 11px;
+}
+
+.chartMainWrapper .infoWrapper span.gain-circle{
+  display: inline-block;
+  background-color: #fff;
+  width: 6px;
+  height: 5px;
+  border-radius: 9999999px;
+  
+}
+
+.chartMainWrapper .infoWrapper span.gain-circle.green{
+  background-color: yellowgreen;
+}
+.chartMainWrapper .infoWrapper span.gain-circle.red{
+  background-color: red;
+}
+
+.chartMainWrapper .mainContentWrapper{
+  height: 225px;
+  flex:1;
+}
+
+.chartMainWrapper .mainContentWrapper canvas{
+  width: 100%;
+}
+.midBar .chartMainWrapper {
+  margin-top: -120px; /* Adjust this value as needed */
+}
+.keyMetrics{
+height: 200px;
+width: 300px;
+border-radius: 20px;
+background-color: #ffffff;
+padding: 10px;
+color: #000000;
+text-align: left;
+margin-top: 20px;
+float:left;
+font-family: Arial, Helvetica, sans-serif;
+}
+.metrics {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.metric .value {
+  margin-left: 10px; 
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purpleBox1, .purpleBox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px; 
+  height: 230px; 
+  background-color: rgb(90, 7, 90); 
+  margin-left: 60px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 50px;
+}
+
+.purpleBox1 h4 {
+  font-size: 16px; 
+  color: #fff; 
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.purpleBox1 .value {
+  
+  font-size: 24px; 
+  font-weight: 600; 
+  color: #ffffff; 
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.purpleBox2 h4 {
+  font-size: 16px; 
+  color: #fff; 
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.purpleBox2 .value {
+  
+  font-size: 24px; 
+  font-weight: 600; 
+  color: #ffffff; 
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.purpleBox1 .value2, .purpleBox2 .value2 {
+  align-self: flex-end;
+  margin-top: 60px; /* Adjust margin as needed */
+  color: #FFFFFF;
+  margin-right: 70px;
+  margin-bottom: 10px;
+}
+.notification {
+  display: flex;
+  align-items:first baseline;
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.grayBox {
+  background-color: rgb(236, 227, 227);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.updateText {
+  color: #000000;
+  font-size: 12px;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.image-container {
+  width: 200px;
+  height: 200px;
+  margin-top: 70px;
+  display: flex;
+  margin-left: -285px;
+}
+.additional-box {
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; 
+  padding: 10px;
+  margin-left: -300px;
+  
+}
+
+.box {
+  border: 2px solid #ccc; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.box img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; 
+}
+
+
+
+
+
+
+
+
+
